@@ -1,27 +1,15 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "appBaseName": {
-      "value": "#arm_appBaseName#"
+    "adminUsername": {
+      "value": "GEN-UNIQUE"
     },
-    "appBaseSkuName": {
-      "value": "#arm_appBaseSkuName#"
+    "adminPassword": {
+      "value": "GEN-PASSWORD"
     },
-    "appbaseAdminLogin": {
-      "value": "#arm_sqlUserName#"
-    },
-    "appbaseAdminLoginPassword": {
-      "value": "#arm_sqlPassword#"
-    },
-    "appbaseCollation": {
-      "value": "SQL_Latin1_General_CP1_CI_AS"
-    },
-    "appbaseEdition": {
-      "value": "Basic"
-    },
-    "appbaseRequestedServiceObjectiveName": {
-      "value": "Basic"
+    "dnsLabelPrefix": {
+      "value": "GEN-UNIQUE"
     }
   }
 }
